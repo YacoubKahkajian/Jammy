@@ -1,0 +1,82 @@
+html {
+  background-color: #8C8;
+}
+
+.titleBar {
+  position: absolute;
+  left: 18%;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+#main-box {
+    position: absolute;
+    text-align: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 60%;
+    margin: auto;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.gallery {
+    background: #EEE;
+}
+
+.gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+#slide1 {
+  content: url('resources/step1.svg');
+}
+
+#slide2 {
+  content: url('resources/step2.svg');
+}
+
+#slide3 {
+  content: url('resources/step3.svg');
+}
+
+.ideaText {
+  font-weight: bold;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.partTwo {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
